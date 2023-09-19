@@ -11,7 +11,6 @@ namespace HomeWorkLibrarian
             var librarian = new Librarian(library);
             var consoleService = new ConsoleService(librarian);
             var readerService = new ReadingService(librarian);
-            var thread1 = new Thread(readerService.StartReading);
             var thread2 = new Thread(consoleService.StartListening);
             Parallel.Invoke(
                 ()=> {
