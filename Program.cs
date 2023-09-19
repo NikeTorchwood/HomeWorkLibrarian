@@ -21,6 +21,7 @@ namespace HomeWorkLibrarian
                     }
                 }, thread2.Start
                 );
+            Console.WriteLine("Конец программы");
             Console.ReadKey();
         }
 
